@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <title>flv.js demo</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="mainContainer">
+    <video id="videoElement" class="centeredVideo" controls autoplay>Your browser is too old
+      which doesn't support HTML5 video.</video>
+  </div>
+  <br>
+  <div class="controls">
+    <!--<button onclick="flv_load()">加载</button>-->
+    <button onclick="flv_start()">开始</button>
+    <button onclick="flv_pause()">暂停</button>
+    <button onclick="flv_destroy()">停止</button>
+    <input style="width:100px" type="text" name="seekpoint" />
+    <button onclick="flv_seekto()">跳转</button>
+  </div>
+
+  <script src="./js/flv.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
